@@ -37,11 +37,20 @@ fun HomeScreen(context: Context, navController: NavHostController) {
             modifier = Modifier
                 .fillMaxWidth()
                 .background(color = MaterialTheme.colors.secondary),
-            horizontalArrangement = Arrangement.Center
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
         ) {
             Text(
                 text = "Joshi Tutorials",
                 style = MaterialTheme.typography.h5,
+                modifier = Modifier
+                    .padding(8.dp),
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colors.primaryVariant
+            )
+            Text(
+                text = "Mobile no. 9646034012",
+                style = MaterialTheme.typography.body1,
                 modifier = Modifier
                     .padding(8.dp),
                 fontWeight = FontWeight.Bold,
@@ -84,9 +93,10 @@ fun Term1(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Text(
-                    text = "Term 1",
+                    text = "Term 1 and Term 2",
                     style = MaterialTheme.typography.h6,
                     modifier = Modifier.padding(8.dp),
+                    color = MaterialTheme.colors.primaryVariant
                 )
                 Icon(
                     imageVector = Icons.Default.ArrowDropDown,

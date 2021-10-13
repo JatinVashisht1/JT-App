@@ -60,7 +60,8 @@ fun TermOneChapter(item: String, context: Context, navController: NavHostControl
                     .fillMaxWidth()
                     .padding(8.dp),
                 style = MaterialTheme.typography.body1,
-                fontWeight = FontWeight.Bold
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colors.primaryVariant
             )
         }
     }
