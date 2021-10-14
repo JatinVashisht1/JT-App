@@ -11,8 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JoshiTutorials">
 
-
-
         <activity
             android:name=".presentation.MainActivity"
             android:exported="true"

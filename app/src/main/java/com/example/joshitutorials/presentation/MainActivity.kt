@@ -3,13 +3,16 @@ package com.example.joshitutorials.presentation
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.graphics.Color
+import androidx.navigation.NavArgumentBuilder
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.example.joshitutorials.presentation.chapter_screen.ChaptersScreen
+import com.example.joshitutorials.presentation.chapter_screen.TermOneChapters
 import com.example.joshitutorials.presentation.home_screen.HomeScreen
 import com.example.joshitutorials.presentation.ui.theme.JoshiTutorialsTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -39,9 +42,15 @@ class MainActivity : ComponentActivity() {
                                     this@MainActivity
                                 )
                         }
+                        composable(Screen.ChapterListScreenRoute.route){
+                                ChaptersScreen(
+                                    navController = navController,
+                                    mainActivity= this@MainActivity
+                                )
+                            }
+                        }
                     }
                 }
             }
         }
     }
-}

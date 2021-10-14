@@ -1,9 +1,10 @@
-package com.example.joshitutorials.presentation.home_screen.components
+package com.example.joshitutorials.presentation.chapter_screen
 
 import android.content.Context
 import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentHeight
@@ -28,7 +29,7 @@ fun TermOneChapters(
     navController: NavHostController
 ){
 
-    LazyColumn(){
+    LazyColumn(modifier = Modifier.fillMaxSize()){
         items(term_one_chapters_name){item->
             TermOneChapter(item = item, context = context, navController = navController)
         }

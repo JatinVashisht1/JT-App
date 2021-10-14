@@ -119,8 +119,6 @@ fun viewChapter(mainActivity: MainActivity, chapter: String) {
                 .swipeHorizontal(false)
                 .enableDoubletap(true)
                 .defaultPage(0)
-                // allows to draw something on the current page, usually visible in the middle of the screen
-
                 .enableAnnotationRendering(true) // render annotations (such as comments, colors or forms)
                 .password(null)
                 .scrollHandle(null)
@@ -128,7 +126,6 @@ fun viewChapter(mainActivity: MainActivity, chapter: String) {
                 // spacing between pages in dp. To define spacing color, set view background
                 .spacing(0)
                 .autoSpacing(true) // add dynamic spacing to fit each page on its own on the screen
-
                 .pageFitPolicy(FitPolicy.WIDTH) // mode to fit pages in the view
                 .fitEachPage(false) // fit each page to the view, else smaller pages are scaled relative to largest page.
                 .pageSnap(false) // snap pages to screen boundaries
